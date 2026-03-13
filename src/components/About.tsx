@@ -53,37 +53,88 @@ export default function About({ setCurrentPage }: AboutProps) {
               />
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Community-Driven</h3>
-                  <p className="text-gray-700">
-                    We believe in working alongside communities, respecting their voices, and ensuring their needs guide our initiatives.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Sustainability</h3>
-                  <p className="text-gray-700">
-                    Our projects are designed for long-term impact, creating lasting change that empowers communities to support themselves.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Transparency</h3>
-                  <p className="text-gray-700">
-                    We maintain complete transparency in our operations and outcomes, ensuring accountability to our supporters and communities.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Collaboration</h3>
-                  <p className="text-gray-700">
-                    We partner with local organizations, government agencies, and global partners to maximize our collective impact.
-                  </p>
-                </div>
-              </div>
-            </div>
+           {/* Our Values Section */}
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
-            <div>
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
+      <h3 className="text-xl font-semibold text-gray-900 mb-3">Community-Driven</h3>
+      <p className="text-gray-700 leading-relaxed">
+        We believe in working alongside communities, respecting their voices, and ensuring their needs guide every initiative we undertake.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
+      <h3 className="text-xl font-semibold text-gray-900 mb-3">Sustainability</h3>
+      <p className="text-gray-700 leading-relaxed">
+        Our programs focus on long-term solutions that empower communities to build resilience and support themselves for the future.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
+      <h3 className="text-xl font-semibold text-gray-900 mb-3">Transparency</h3>
+      <p className="text-gray-700 leading-relaxed">
+        We operate with openness and accountability so supporters and communities clearly see the impact of our work.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
+      <h3 className="text-xl font-semibold text-gray-900 mb-3">Collaboration</h3>
+      <p className="text-gray-700 leading-relaxed">
+        We work with local partners, organizations, and institutions to maximize the reach and effectiveness of our programs.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+{/* Our Work Section */}
+<div className="mt-12">
+  <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
+  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+    Since our inception, we have been committed to making a tangible difference in western Jamaica. Our work encompasses:
+  </p>
+  <ul className="space-y-4">
+    <li className="flex gap-4">
+      <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
+      <div>
+        <h4 className="font-semibold text-gray-900">Emergency Relief & Housing</h4>
+        <p className="text-gray-700">
+          Rapid response to natural disasters, providing shelter, essential supplies, and infrastructure reconstruction.
+        </p>
+      </div>
+    </li>
+    <li className="flex gap-4">
+      <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
+      <div>
+        <h4 className="font-semibold text-gray-900">Education & Skills Development</h4>
+        <p className="text-gray-700">
+          Supporting schools, providing job training, and creating educational opportunities for young people.
+        </p>
+      </div>
+    </li>
+    <li className="flex gap-4">
+      <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
+      <div>
+        <h4 className="font-semibold text-gray-900">Economic Development</h4>
+        <p className="text-gray-700">
+          Supporting local businesses, creating employment opportunities, and building sustainable livelihoods.
+        </p>
+      </div>
+    </li>
+    <li className="flex gap-4">
+      <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
+      <div>
+        <h4 className="font-semibold text-gray-900">Healthcare & Resilience</h4>
+        <p className="text-gray-700">
+          Supporting disaster preparedness, healthcare recovery, and building community resilience.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Since our inception, we have been committed to making a tangible difference in western Jamaica. Our work encompasses:
