@@ -55,40 +55,96 @@ export default function About({ setCurrentPage }: AboutProps) {
 
             {/* Our Values */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
+  <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="grid md:grid-cols-2 gap-8">
 
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Community-Driven</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    We believe in working alongside communities, respecting their voices, and ensuring their needs guide every initiative we undertake.
-                  </p>
-                </div>
+    {/* Card 1 */}
+    <div className="relative h-[320px] rounded-3xl overflow-hidden group">
+      <img
+        src="https://images.unsplash.com/photo-1593113598332-cd59a93c6132"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-emerald-700/70"></div>
 
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Sustainability</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Our programs focus on long-term solutions that empower communities to build resilience and support themselves for the future.
-                  </p>
-                </div>
+      <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+        <div className="bg-white/90 text-emerald-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 font-bold">
+          C
+        </div>
 
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Transparency</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    We operate with openness and accountability so supporters and communities clearly see the impact of our work.
-                  </p>
-                </div>
+        <h3 className="text-2xl font-bold mb-3">Community-Driven</h3>
 
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8 border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Collaboration</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    We work with local partners, organizations, and institutions to maximize the reach and effectiveness of our programs.
-                  </p>
-                </div>
+        <p className="text-gray-100 leading-relaxed">
+          We work alongside communities, ensuring their voices guide our initiatives and recovery efforts.
+        </p>
+      </div>
+    </div>
 
-              </div>
-            </div>
+    {/* Card 2 */}
+    <div className="relative h-[320px] rounded-3xl overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-amber-600/70"></div>
+
+      <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+        <div className="bg-white/90 text-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 font-bold">
+          S
+        </div>
+
+        <h3 className="text-2xl font-bold mb-3">Sustainability</h3>
+
+        <p className="text-gray-100 leading-relaxed">
+          Our programs focus on long-term solutions that empower communities to build sustainable futures.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="relative h-[320px] rounded-3xl overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1544027993-37dbfe43562a"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-emerald-700/70"></div>
+
+      <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+        <div className="bg-white/90 text-emerald-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 font-bold">
+          T
+        </div>
+
+        <h3 className="text-2xl font-bold mb-3">Transparency</h3>
+
+        <p className="text-gray-100 leading-relaxed">
+          We operate with openness and accountability so supporters clearly see the impact of their contributions.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 4 */}
+    <div className="relative h-[320px] rounded-3xl overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-amber-600/70"></div>
+
+      <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+        <div className="bg-white/90 text-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 font-bold">
+          C
+        </div>
+
+        <h3 className="text-2xl font-bold mb-3">Collaboration</h3>
+
+        <p className="text-gray-100 leading-relaxed">
+          We partner with organizations and communities to maximize the reach and effectiveness of our work.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
             {/* Our Work */}
             <div className="mt-12">
