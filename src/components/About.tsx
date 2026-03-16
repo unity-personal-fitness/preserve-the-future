@@ -181,7 +181,7 @@ the reach and effectiveness of our work.
 </div>
 </div>
 </div>
-
+</div>
 {/* Our Work (FULL WIDTH) */}
 
 <div className="bg-emerald-700 w-full py-20">
