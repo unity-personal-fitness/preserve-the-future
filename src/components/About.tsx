@@ -113,37 +113,101 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
 
   </div>
 </div>
-              <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-6"> Since our inception, we have been committed to making a tangible difference in western Jamaica. Our work encompasses: </p>
-                    <ul className="space-y-4">
-                        <li className="flex gap-4"> <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
-                            <div>
-                                <h4 className="font-semibold text-gray-900">Emergency Relief & Housing</h4>
-                                <p className="text-gray-700">Rapid response to natural disasters, providing shelter, essential supplies, and infrastructure reconstruction.</p>
-                            </div>
-                        </li>
-                        <li className="flex gap-4"> <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
-                            <div>
-                                <h4 className="font-semibold text-gray-900">Education & Skills Development</h4>
-                                <p className="text-gray-700">Supporting schools, providing job training, and creating educational opportunities for young people.</p>
-                            </div>
-                        </li>
-                        <li className="flex gap-4"> <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
-                            <div>
-                                <h4 className="font-semibold text-gray-900">Economic Development</h4>
-                                <p className="text-gray-700">Supporting local businesses, creating employment opportunities, and building sustainable livelihoods.</p>
-                            </div>
-                        </li>
-                        <li className="flex gap-4"> <span className="text-emerald-600 font-bold text-xl flex-shrink-0">•</span>
-                            <div>
-                                <h4 className="font-semibold text-gray-900">Healthcare & Resilience</h4>
-                                <p className="text-gray-700">Supporting disaster preparedness, healthcare recovery, and building community resilience.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div>
+              <div className="bg-emerald-700 w-full py-20 my-20">
+
+  <div className="max-w-5xl mx-auto px-6 text-center text-white">
+
+    <div className="mb-14">
+      <h2 className="text-4xl font-bold mb-6">Our Work</h2>
+
+      <p className="text-lg text-emerald-100 leading-relaxed max-w-3xl mx-auto">
+        To empower individuals and families in western Jamaica with the resources,
+        support, and opportunities they need to rebuild their lives with dignity
+        and create a sustainable, resilient future for generations to come.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10">
+
+      {/* Card 1 */}
+      <div className="bg-emerald-600 rounded-xl overflow-hidden shadow-lg text-left">
+        <img
+          src="https://images.unsplash.com/photo-1593113598332-cd59a93c6132"
+          className="w-full h-48 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+            ✔ Immediate Emergency Relief
+          </h3>
+
+          <p className="text-emerald-100 text-sm leading-relaxed">
+            Providing essential supplies, temporary shelter, and critical
+            resources to families in urgent need.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-emerald-600 rounded-xl overflow-hidden shadow-lg text-left">
+        <img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+          className="w-full h-48 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+            ✔ Housing Reconstruction
+          </h3>
+
+          <p className="text-emerald-100 text-sm leading-relaxed">
+            Supporting families to rebuild safe, sturdy homes and restore
+            community infrastructure for long-term stability.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-emerald-600 rounded-xl overflow-hidden shadow-lg text-left">
+        <img
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+          className="w-full h-48 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+            ✔ Community Recovery Programs
+          </h3>
+
+          <p className="text-emerald-100 text-sm leading-relaxed">
+            Restoring local businesses, schools, and healthcare facilities
+            to rebuild the social and economic fabric of communities.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-emerald-600 rounded-xl overflow-hidden shadow-lg text-left">
+        <img
+          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
+          className="w-full h-48 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+            ✔ Education & Future Resilience
+          </h3>
+
+          <p className="text-emerald-100 text-sm leading-relaxed">
+            Investing in education, job training, and disaster preparedness
+            to build stronger, more resilient communities.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Projects</h2>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8"> We currently operate focused initiatives in three key areas of western Jamaica: </p>
                     <div className="space-y-8">
