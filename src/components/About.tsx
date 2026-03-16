@@ -21,6 +21,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
                     <p className="text-lg text-gray-700 leading-relaxed"> We envision resilient, thriving communities in western Jamaica where families have access to safe housing, quality education, economic opportunities, and healthcare. Communities that are prepared for natural disasters and equipped with the tools to build a sustainable future for generations to come. </p>
                 </div>
                 <div className="my-12"> <img src="https://i.ibb.co/Q7s7Ws5y/image00011.jpg" alt="Community engagement and support" className="w-full h-96 object-cover rounded-2xl shadow-lg mb-8" /> </div>
+               {/* Our Values */}
                 <div>
   <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
