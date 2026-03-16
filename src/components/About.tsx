@@ -251,6 +251,7 @@ Get Involved
 
 </div>
 </div>
+</div>
 </section>
 );
 }
