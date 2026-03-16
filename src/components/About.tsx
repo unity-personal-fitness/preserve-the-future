@@ -23,7 +23,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
                 <div className="my-12"> <img src="https://i.ibb.co/Q7s7Ws5y/image00011.jpg" alt="Community engagement and support" className="w-full h-96 object-cover rounded-2xl shadow-lg mb-8" /> </div>
                {/* Our Values */}
                 <div>
- <h2 style="text-align: center;" class="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
+ <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
   <div className="grid md:grid-cols-2 gap-8">
 
