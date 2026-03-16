@@ -28,7 +28,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
   <div className="grid md:grid-cols-2 gap-8">
 
     {/* Card 1 */}
-    <div className="relative h-[270px] rounded-3xl overflow-hidden group">
+    <div className="relative h-[260px] rounded-3xl overflow-hidden group">
       <img
         src="https://images.unsplash.com/photo-1593113598332-cd59a93c6132"
         className="absolute inset-0 w-full h-full object-cover"
@@ -49,7 +49,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
     </div>
 
     {/* Card 2 */}
-    <div className="relative h-[270px] rounded-3xl overflow-hidden">
+    <div className="relative h-[260px] rounded-3xl overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"
         className="absolute inset-0 w-full h-full object-cover"
@@ -70,7 +70,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
     </div>
 
     {/* Card 3 */}
-    <div className="relative h-[270px] rounded-3xl overflow-hidden">
+    <div className="relative h-[260px] rounded-3xl overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1544027993-37dbfe43562a"
         className="absolute inset-0 w-full h-full object-cover"
@@ -91,7 +91,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
     </div>
 
     {/* Card 4 */}
-    <div className="relative h-[270px] rounded-3xl overflow-hidden">
+    <div className="relative h-[260px] rounded-3xl overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
         className="absolute inset-0 w-full h-full object-cover"
