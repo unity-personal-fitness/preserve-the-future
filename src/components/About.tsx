@@ -208,6 +208,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
     </div>
   </div>
 </div>
+              <div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Projects</h2>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8"> We currently operate focused initiatives in three key areas of western Jamaica: </p>
                     <div className="space-y-8">
