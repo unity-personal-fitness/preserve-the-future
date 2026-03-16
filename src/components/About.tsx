@@ -250,7 +250,7 @@ Get Involved
 {/* CENTERED CONTENT END */}
 
 </div>
-
+</div>
 </section>
 );
 }
