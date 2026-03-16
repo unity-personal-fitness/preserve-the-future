@@ -25,7 +25,6 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
                 <div>
   <h2 class="center-text text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
-
   <div className="grid md:grid-cols-2 gap-8">
 
     {/* Card 1 */}
