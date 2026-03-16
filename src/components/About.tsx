@@ -113,6 +113,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
 
   </div>
 </div>
+              <div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
                     <p className="text-lg text-gray-700 leading-relaxed mb-6"> Since our inception, we have been committed to making a tangible difference in western Jamaica. Our work encompasses: </p>
                     <ul className="space-y-4">
