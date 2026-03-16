@@ -261,11 +261,7 @@ export default function About({ setCurrentPage }: AboutProps) {
       </div>
 
       {/* CENTERED CONTENT START */}
-      <div className="w-full py-20">
-        <div className="container mx-auto max-w-6xl px-6">
-
-         
-
+      
             {/* projects unchanged */}
           </div>
 
