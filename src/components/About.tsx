@@ -113,7 +113,7 @@ interface AboutProps { setCurrentPage?: (page: string) => void; } export default
 
   </div>
 </div>
-              <div className="bg-emerald-700 w-full py-20 my-20">
+              <div className="bg-emerald-700 w-full py-20">
 
   <div className="max-w-5xl mx-auto px-6 text-center text-white">
 
