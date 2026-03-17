@@ -34,8 +34,8 @@ export default function About({ setCurrentPage }: AboutProps) {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
               Our Mission
             </h1>
-<break
- <break          
+<break></break>
+ <break></break>          
 
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
