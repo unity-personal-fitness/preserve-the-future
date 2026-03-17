@@ -62,13 +62,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                 </p>
               </div>
 
-              <div className="my-12">
-                <img
-                  src="https://i.ibb.co/Q7s7Ws5y/image00011.jpg"
-                  alt="Community engagement and support"
-                  className="w-full h-96 object-cover rounded-2xl shadow-lg mb-8"
-                />
-              </div>
+              
 
               {/* Our Values */}
               <div>
