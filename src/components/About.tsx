@@ -106,7 +106,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                       src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"
                       className="absolute inset-0 w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-amber-500/70"></div>
+                    <div className="absolute inset-0 bg-amber-500/60"></div>
 
                     <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
                      
