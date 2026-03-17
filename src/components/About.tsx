@@ -180,7 +180,7 @@ export default function About({ setCurrentPage }: AboutProps) {
 
             <div className="bg-emerald-600 rounded-xl overflow-hidden shadow-lg text-left">
               <img
-                src="https://images.unsplash.com/photo-1593113598332-cd59a93c6132"
+                src="https://www.ifrc.org/sites/default/files/styles/article_press_release_featured_image/public/2025-10/jamaica_red_cross_hurricane_response.jpeg?itok=qujPiThP"
                 className="w-full h-48 object-cover"
               />
 
