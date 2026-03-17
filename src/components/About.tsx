@@ -258,16 +258,7 @@ export default function About({ setCurrentPage }: AboutProps) {
       <div className="w-full py-20">
         <div className="container mx-auto max-w-6xl px-6">
 
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Projects</h2>
-
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              We currently operate focused initiatives in three key areas
-              of western Jamaica:
-            </p>
-
-            {/* projects unchanged */}
-          </div>
+         
 
           <div className="bg-emerald-50 rounded-xl p-8 mt-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
