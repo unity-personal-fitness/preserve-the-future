@@ -36,7 +36,10 @@ export default function About({ setCurrentPage }: AboutProps) {
             </h1>
 <break></break>
  <break></break>          
-
+<break></break>
+ <break></break>
+            <break></break>
+ <break></break>
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   At Preserve The Future, we are dedicated to empowering communities
