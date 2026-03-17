@@ -82,7 +82,7 @@ export default function About({ setCurrentPage }: AboutProps) {
 
                 <div className="grid md:grid-cols-2 gap-8">
 
-                  <div className="relative h-[260px] rounded-3xl overflow-hidden group">
+                  <div className="relative h-[250px] rounded-3xl overflow-hidden group">
                     <img
                       src="https://images.squarespace-cdn.com/content/v1/60fed4ac741aae78920bfb1d/1634340492383-HU4J4VLKHXPYGUH5P0G5/image-asset.jpeg"
                       className="absolute inset-0 w-full h-full object-cover"
@@ -101,7 +101,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                     </div>
                   </div>
 
-                  <div className="relative h-[260px] rounded-3xl overflow-hidden">
+                  <div className="relative h-[250px] rounded-3xl overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"
                       className="absolute inset-0 w-full h-full object-cover"
@@ -120,7 +120,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                     </div>
                   </div>
 
-                  <div className="relative h-[260px] rounded-3xl overflow-hidden">
+                  <div className="relative h-[250px] rounded-3xl overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1544027993-37dbfe43562a"
                       className="absolute inset-0 w-full h-full object-cover"
@@ -139,7 +139,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                     </div>
                   </div>
 
-                  <div className="relative h-[260px] rounded-3xl overflow-hidden">
+                  <div className="relative h-[250px] rounded-3xl overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
                       className="absolute inset-0 w-full h-full object-cover"
