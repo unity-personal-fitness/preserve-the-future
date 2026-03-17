@@ -47,7 +47,8 @@ export default function About({ setCurrentPage }: AboutProps) {
                   partnerships needed to rebuild and recover.
                 </p>
               </div>
-
+<break></break>
+ <break></break>
               <div>
                 <h1 className="text-5xl font-bold text-gray-900 mb-4">Our Vision</h1>
 
