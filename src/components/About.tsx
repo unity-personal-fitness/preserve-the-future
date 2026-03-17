@@ -31,7 +31,7 @@ export default function About({ setCurrentPage }: AboutProps) {
         <div className="max-w-6xl mx-auto px-6">
 <div className="prose prose-lg max-w-4xl mx-auto text-center space-y-8">
   
-          <div className="mt-20">
+          <div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
               Our Mission
             </h1>
