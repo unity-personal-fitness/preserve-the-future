@@ -109,9 +109,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                     <div className="absolute inset-0 bg-amber-600/70"></div>
 
                     <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
-                      <div className="bg-white/90 text-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 font-bold">
-                        S
-                      </div>
+                     
 
                       <h3 className="text-2xl font-bold mb-3">Sustainability</h3>
 
