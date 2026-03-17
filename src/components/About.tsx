@@ -68,7 +68,7 @@ export default function About({ setCurrentPage }: AboutProps) {
             <div className="mt-16 flex justify-center">
   <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
-              <div>
+               <div className="mt-20">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
 
                 <div className="grid md:grid-cols-2 gap-8">
