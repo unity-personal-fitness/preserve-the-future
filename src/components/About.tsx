@@ -27,44 +27,7 @@ export default function About({ setCurrentPage }: AboutProps) {
         </div>
       </div>
 
-      <div className="w-full py-20">
-        <div className="max-w-6xl mx-auto px-6">
-<div className="prose prose-lg max-w-4xl mx-auto text-center space-y-8">
-  
-          <div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
-              Our Mission
-            </h1>
-
-              <div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  At Preserve The Future, we are dedicated to empowering communities
-                  in western Jamaica through comprehensive disaster relief,
-                  community development, and sustainable livelihood initiatives.
-                  We believe that every community deserves the opportunity to thrive,
-                  and we work tirelessly to provide the resources, support, and
-                  partnerships needed to rebuild and recover.
-                </p>
-              </div>
-
-            <div className="mt-16 flex justify-center">
-  <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-</div>
-             <div className="mt-20">
-                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Our Vision</h1>
-
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  We envision resilient, thriving communities in western Jamaica
-                  where families have access to safe housing, quality education,
-                  economic opportunities, and healthcare. Communities that are
-                  prepared for natural disasters and equipped with the tools to
-                  build a sustainable future for generations to come.
-                </p>
-              </div>
-
-              
-
-              {/* Our Values */}
+       {/* Our Values */}
             <div className="mt-16 flex justify-center">
   <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
@@ -156,7 +119,45 @@ export default function About({ setCurrentPage }: AboutProps) {
           </div>
 
         </div>
-      </div>
+      </div> 
+      <div className="w-full py-20">
+        <div className="max-w-6xl mx-auto px-6">
+<div className="prose prose-lg max-w-4xl mx-auto text-center space-y-8">
+  
+          <div>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+              Our Mission
+            </h1>
+
+              <div>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  At Preserve The Future, we are dedicated to empowering communities
+                  in western Jamaica through comprehensive disaster relief,
+                  community development, and sustainable livelihood initiatives.
+                  We believe that every community deserves the opportunity to thrive,
+                  and we work tirelessly to provide the resources, support, and
+                  partnerships needed to rebuild and recover.
+                </p>
+              </div>
+
+            <div className="mt-16 flex justify-center">
+  <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+</div>
+             <div className="mt-20">
+                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Our Vision</h1>
+
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We envision resilient, thriving communities in western Jamaica
+                  where families have access to safe housing, quality education,
+                  economic opportunities, and healthcare. Communities that are
+                  prepared for natural disasters and equipped with the tools to
+                  build a sustainable future for generations to come.
+                </p>
+              </div>
+
+              
+
+             
 
       {/* Our Work */}
       <div className="bg-emerald-700 w-full py-20">
