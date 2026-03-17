@@ -51,7 +51,7 @@ export default function About({ setCurrentPage }: AboutProps) {
   <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
              <div className="mt-20">
-                <h1 className="text-5xl font-bold text-gray-900 mb-8">Our Vision</h1>
+                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Our Vision</h1>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We envision resilient, thriving communities in western Jamaica
