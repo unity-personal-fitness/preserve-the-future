@@ -53,9 +53,11 @@ export default function About({ setCurrentPage }: AboutProps) {
               </div>
 <break></break>
  <break></break>
-             <div className="mt-16 flex justify-center">
+            <div className="mt-16 flex justify-center">
   <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
+             <div className="mt-20">
+                <h1 className="text-5xl font-bold text-gray-900 mb-4">Our Vision</h1>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We envision resilient, thriving communities in western Jamaica
