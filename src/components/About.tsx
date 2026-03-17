@@ -105,7 +105,7 @@ export default function About({ setCurrentPage }: AboutProps) {
 
                   <div className="relative h-[260px] rounded-3xl overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"
+                      src="https://images.squarespace-cdn.com/content/v1/60fed4ac741aae78920bfb1d/1634340492383-HU4J4VLKHXPYGUH5P0G5/image-asset.jpeg"
                       className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-amber-600/70"></div>
