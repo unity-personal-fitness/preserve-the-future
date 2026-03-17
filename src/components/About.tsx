@@ -53,7 +53,7 @@ export default function About({ setCurrentPage }: AboutProps) {
               </div>
 <break></break>
  <break></break>
-              <div>
+             <div className="mt-20">
                 <h1 className="text-5xl font-bold text-gray-900 mb-4">Our Vision</h1>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
