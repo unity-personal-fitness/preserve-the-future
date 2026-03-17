@@ -46,8 +46,7 @@ export default function About({ setCurrentPage }: AboutProps) {
                   partnerships needed to rebuild and recover.
                 </p>
               </div>
-<break></break>
- <break></break>
+
             <div className="mt-16 flex justify-center">
   <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
