@@ -35,7 +35,7 @@ export default function About({ setCurrentPage }: AboutProps) {
               Our Mission
             </h1>
 
-            <div className="prose prose-lg max-w-4xl space-y-8">
+            <div className="prose prose-lg max-w-4xl mx-auto text-center space-y-8">
 
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
