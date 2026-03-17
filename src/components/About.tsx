@@ -65,9 +65,8 @@ export default function About({ setCurrentPage }: AboutProps) {
               
 
               {/* Our Values */}
-             <div className="w-full py-20">
-        <div className="max-w-6xl mx-auto px-6">
-<div className="prose prose-lg max-w-4xl mx-auto text-center space-y-8">
+            <div className="mt-16 flex justify-center">
+  <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 </div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
