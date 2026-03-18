@@ -45,41 +45,50 @@ export default function Projects() {
     },
   ];
 
+  const openProjectModal = (projectId: number) => {
+    setSelectedProject(projectId);
+    setIsModalOpen(true);
+  };
+
+  const selectedProjectData = projects.find((p) => p.id === selectedProject);
+
   return (
-<section className="pb-20">
-  <div className="relative h-[420px] md:h-[600px] overflow-hidden">
+    <section className="pb-20">
+      <div className="relative h-[420px] md:h-[600px] overflow-hidden">
+        <img
+          src="https://i.ibb.co/cKf1xxpg/image00006.jpg"
+          alt="Project team"
+          className="w-full h-full object-cover object-center"
+        />
 
-    <img
-      src="https://i.ibb.co/cKf1xxpg/image00006.jpg"
-      alt="Project team"
-      className="w-full h-full object-cover object-center"
-    />
+        <div className="absolute inset-0 bg-black/40"></div>
 
-    <div className="absolute inset-0 bg-black/40"></div>
-
-    <div className="absolute inset-0 flex items-center justify-center text-center px-6">
-      <div>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-          Our Projects
-        </h1>
-        <p className="text-xl text-gray-100 max-w-2xl mx-auto">
-          Making a tangible difference in western Jamaica through focused,
-          community-driven initiatives
-        </p>
+        <div className="absolute inset-0 flex items-center justify-center text-center px-6">
+          <div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+              Our Projects
+            </h1>
+            <p className="text-xl text-gray-100 max-w-2xl mx-auto">
+              Making a tangible difference in western Jamaica through focused,
+              community-driven initiatives
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-  </div>
-      
       <div className="container mx-auto px-6">
         <div className="space-y-24 bg-gray-50 rounded-2xl -mx-6 px-6 py-20">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white rounded-3xl overflow-hidden shadow-lg">
+            <div
+              key={project.id}
+              className="bg-white rounded-3xl overflow-hidden shadow-lg"
+            >
               <div className="grid lg:grid-cols-2 gap-8 p-8 md:p-12">
                 <div className="flex flex-col justify-center">
                   <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     {project.name}
                   </h2>
+
                   <p className="text-lg text-gray-700 leading-relaxed mb-8">
                     {project.description}
                   </p>
@@ -88,6 +97,7 @@ export default function Projects() {
                     <p className="text-sm font-semibold text-gray-700 mb-3">
                       Focus Areas:
                     </p>
+
                     <div className="flex flex-wrap gap-2 mb-8">
                       {project.focus.map((area) => (
                         <span
@@ -101,34 +111,24 @@ export default function Projects() {
                   </div>
 
                   <button
-                    onClick={() => window.scrollTo(0, 0)}
+                    onClick={() => openProjectModal(project.id)}
                     className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors inline-flex items-center gap-2"
                   >
                     View Project Details →
                   </button>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
-                  {project.images.map((image, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        setSelectedProject(project.id);
-                        setIsModalOpen(true);
-                      }}
-                      className={`${
-                        idx === 0 && project.images.length > 1
-                          ? 'col-span-2 h-80'
-                          : 'h-64'
-                      } overflow-hidden rounded-xl bg-gray-200 shadow-md hover:shadow-xl transition-shadow group cursor-pointer`}
-                    >
-                      <img
-                        src={image}
-                        alt={`${project.name} - Image ${idx + 1}`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </button>
-                  ))}
+                <div>
+                  <button
+                    onClick={() => openProjectModal(project.id)}
+                    className="w-full h-80 overflow-hidden rounded-xl bg-gray-200 shadow-md hover:shadow-xl transition-shadow group cursor-pointer"
+                  >
+                    <img
+                      src={project.images[0]}
+                      alt={`${project.name} preview`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
@@ -143,7 +143,11 @@ export default function Projects() {
             a difference.
           </p>
           <button className="bg-white text-emerald-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-colors">
-            <a href="https://gofund.me/1773eea41" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gofund.me/1773eea41"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Support Our Projects
             </a>
           </button>
@@ -152,8 +156,8 @@ export default function Projects() {
 
       <ImageModal
         isOpen={isModalOpen}
-        images={projects.find((p) => p.id === selectedProject)?.images || []}
-        projectName={projects.find((p) => p.id === selectedProject)?.name || ''}
+        images={selectedProjectData?.images || []}
+        projectName={selectedProjectData?.name || ''}
         onClose={() => setIsModalOpen(false)}
       />
     </section>
