@@ -52,6 +52,13 @@ export default function Projects() {
         'Building resilience through comprehensive support programs in St. Elizabeth. Integrating disaster preparedness, healthcare recovery, and sustainable livelihood initiatives.',
       images: [
         'https://i.ibb.co/Q3PJydMk/image00020.jpg',
+        'https://i.ibb.co/5xYhybgR/image00005.jpg',
+        'https://i.ibb.co/cKpvFBY4/image00004.jpg',
+        'https://i.ibb.co/WWfsDBrx/image00001.jpg',
+        'https://i.ibb.co/qLmhHZC0/image00014.jpg',
+        '',
+        '',
+        '',
       ],
       focus: ['Resilience Building', 'Healthcare', 'Sustainability'],
     },
