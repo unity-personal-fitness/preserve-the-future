@@ -42,7 +42,6 @@ export default function Projects() {
         'https://i.ibb.co/4wv1fFBq/image00014.jpg',
         'https://i.ibb.co/XfhLGVg8/image00016.jpg',
         'https://i.ibb.co/yFSX5CCT/image00001.jpg',
-        '',
       ],
       focus: ['Education', 'Economic Development', 'Community Centers'],
     },
