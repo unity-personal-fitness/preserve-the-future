@@ -33,7 +33,7 @@ export default function Projects() {
       images: [
         'https://i.ibb.co/Q7s7Ws5y/image00011.jpg',
         'https://i.ibb.co/YvKyqsF/image00012.jpg',
-        ''
+        'https://i.ibb.co/wF0dhCBk/image00009.jpg',
         'https://i.ibb.co/wF0dhCBk/image00009.jpg',
         'https://i.ibb.co/Q7WmKZCH/image00010.jpg',
         'https://i.ibb.co/qwsgxgn/image00002.jpg',
