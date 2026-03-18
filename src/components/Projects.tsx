@@ -19,7 +19,7 @@ export default function Projects() {
         'https://i.ibb.co/r2jSJBxN/image00010.jpg',
         'https://i.ibb.co/qLF6tjNZ/image00004.jpg',
         'https://i.ibb.co/ymYftHcW/image00019.jpg',
-        
+        'https://i.ibb.co/NdhCnWfk/image00017.jpg',
       ],
       focus: ['Emergency Relief', 'Housing', 'Infrastructure'],
     },
