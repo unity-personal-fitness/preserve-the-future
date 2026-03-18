@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 interface ImageModalProps {
@@ -8,10 +8,21 @@ interface ImageModalProps {
   onClose: () => void;
 }
 
-export default function ImageModal({ isOpen, images, projectName, onClose }: ImageModalProps) {
+export default function ImageModal({
+  isOpen,
+  images,
+  projectName,
+  onClose,
+}: ImageModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (isOpen) {
+      setCurrentIndex(0);
+    }
+  }, [isOpen, projectName]);
+
+  if (!isOpen || images.length === 0) return null;
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -49,36 +60,46 @@ export default function ImageModal({ isOpen, images, projectName, onClose }: Ima
         />
       </div>
 
-      <button
-        onClick={goToPrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors p-2"
-        aria-label="Previous image"
-      >
-        <ChevronLeft size={40} />
-      </button>
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={goToPrevious}
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors p-2"
+            aria-label="Previous image"
+          >
+            <ChevronLeft size={40} />
+          </button>
 
-      <button
-        onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors p-2"
-        aria-label="Next image"
-      >
-        <ChevronRight size={40} />
-      </button>
+          <button
+            onClick={goToNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors p-2"
+            aria-label="Next image"
+          >
+            <ChevronRight size={40} />
+          </button>
+        </>
+      )}
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-center">
         <p className="text-lg font-semibold mb-3">{projectName}</p>
-        <div className="flex gap-2 justify-center flex-wrap max-w-md">
-          {images.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIndex(idx)}
-              className={`h-2 w-2 rounded-full transition-all ${
-                idx === currentIndex ? 'bg-white w-8' : 'bg-gray-500 hover:bg-gray-400'
-              }`}
-              aria-label={`Go to image ${idx + 1}`}
-            />
-          ))}
-        </div>
+
+        {images.length > 1 && (
+          <div className="flex gap-2 justify-center flex-wrap max-w-md">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`h-2 w-2 rounded-full transition-all ${
+                  idx === currentIndex
+                    ? 'bg-white w-8'
+                    : 'bg-gray-500 hover:bg-gray-400'
+                }`}
+                aria-label={`Go to image ${idx + 1}`}
+              />
+            ))}
+          </div>
+        )}
+
         <p className="text-sm text-gray-400 mt-3">
           {currentIndex + 1} / {images.length}
         </p>
