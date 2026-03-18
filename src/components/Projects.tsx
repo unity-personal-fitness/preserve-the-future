@@ -64,7 +64,7 @@ export default function Projects() {
         'https://i.ibb.co/vxPVfrB5/image00028.jpg',
         'https://i.ibb.co/dwCsg2t6/image00027.jpg',
         'https://i.ibb.co/Z1S6LWR7/image00024.jpg',
-        '',
+        'https://i.ibb.co/6ctsBDVC/image00023.jpg',
       ],
       focus: ['Resilience Building', 'Healthcare', 'Sustainability'],
     },
