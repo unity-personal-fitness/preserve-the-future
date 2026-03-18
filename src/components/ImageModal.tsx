@@ -16,6 +16,7 @@ export default function ImageModal({
 }: ImageModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Reset to first image whenever modal opens or project changes
   useEffect(() => {
     if (isOpen) {
       setCurrentIndex(0);
@@ -25,11 +26,15 @@ export default function ImageModal({
   if (!isOpen || images.length === 0) return null;
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -44,6 +49,7 @@ export default function ImageModal({
       onKeyDown={handleKeyDown}
       tabIndex={0}
     >
+      {/* Close */}
       <button
         onClick={onClose}
         className="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors p-2"
@@ -52,6 +58,7 @@ export default function ImageModal({
         <X size={32} />
       </button>
 
+      {/* Image */}
       <div className="w-full h-full flex items-center justify-center px-4 md:px-8">
         <img
           src={images[currentIndex]}
@@ -60,6 +67,7 @@ export default function ImageModal({
         />
       </div>
 
+      {/* Navigation (only if multiple images) */}
       {images.length > 1 && (
         <>
           <button
@@ -80,6 +88,7 @@ export default function ImageModal({
         </>
       )}
 
+      {/* Footer */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-center">
         <p className="text-lg font-semibold mb-3">{projectName}</p>
 
