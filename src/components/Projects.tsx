@@ -33,6 +33,7 @@ export default function Projects() {
       images: [
         'https://i.ibb.co/Q7s7Ws5y/image00011.jpg',
         'https://i.ibb.co/YvKyqsF/image00012.jpg',
+        ''
         'https://i.ibb.co/wF0dhCBk/image00009.jpg',
         'https://i.ibb.co/Q7WmKZCH/image00010.jpg',
         'https://i.ibb.co/qwsgxgn/image00002.jpg',
@@ -40,6 +41,7 @@ export default function Projects() {
         'https://i.ibb.co/pFBCxqn/image00007.jpg',
         'https://i.ibb.co/4wv1fFBq/image00014.jpg',
         'https://i.ibb.co/XfhLGVg8/image00016.jpg',
+        '',
         '',
       ],
       focus: ['Education', 'Economic Development', 'Community Centers'],
