@@ -54,6 +54,8 @@ export default function Projects() {
 
   return (
     <section className="pb-20">
+
+      {/* HERO */}
       <div className="relative h-[420px] md:h-[600px] overflow-hidden">
         <img
           src="https://i.ibb.co/cKf1xxpg/image00006.jpg"
@@ -76,6 +78,7 @@ export default function Projects() {
         </div>
       </div>
 
+      {/* PROJECTS */}
       <div className="container mx-auto px-6">
         <div className="space-y-24 bg-gray-50 rounded-2xl -mx-6 px-6 py-20">
           {projects.map((project) => (
@@ -84,6 +87,8 @@ export default function Projects() {
               className="bg-white rounded-3xl overflow-hidden shadow-lg"
             >
               <div className="grid lg:grid-cols-2 gap-8 p-8 md:p-12">
+
+                {/* TEXT */}
                 <div className="flex flex-col justify-center">
                   <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     {project.name}
@@ -118,23 +123,34 @@ export default function Projects() {
                   </button>
                 </div>
 
+                {/* IMAGE WITH OVERLAY */}
                 <div>
                   <button
                     onClick={() => openProjectModal(project.id)}
-                    className="w-full h-80 overflow-hidden rounded-xl bg-gray-200 shadow-md hover:shadow-xl transition-shadow group cursor-pointer"
+                    className="relative w-full h-80 overflow-hidden rounded-xl bg-gray-200 shadow-md hover:shadow-xl transition-shadow group cursor-pointer"
                   >
                     <img
                       src={project.images[0]}
                       alt={`${project.name} preview`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
+
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="bg-white/90 text-gray-900 px-6 py-3 rounded-full font-semibold text-sm shadow-md">
+                        View Gallery →
+                      </span>
+                    </div>
                   </button>
                 </div>
+
               </div>
             </div>
           ))}
         </div>
 
+        {/* CTA */}
         <div className="mt-20 bg-gradient-to-br from-emerald-600 to-green-700 rounded-2xl p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Get Involved</h3>
           <p className="text-lg mb-8 max-w-2xl mx-auto text-emerald-50">
@@ -154,6 +170,7 @@ export default function Projects() {
         </div>
       </div>
 
+      {/* MODAL */}
       <ImageModal
         isOpen={isModalOpen}
         images={selectedProjectData?.images || []}
